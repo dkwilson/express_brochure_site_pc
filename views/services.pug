@@ -1,0 +1,18 @@
+extends layout
+
+
+
+block content
+    h1 #{title}
+
+    .card-deck.mb-4.text-center
+
+    each service, i in services
+        .card.mb-3.shadow-small
+            .card-header
+                h3.my-0.font-weight-normal #{service.name}
+            .card-body
+                p #{service.description}
+                h4 Price Range: #{service.price_range} 
+        
+
